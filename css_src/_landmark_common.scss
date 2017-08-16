@@ -1,0 +1,35 @@
+.bg{
+  background-color:#000;
+  width:100%;
+  height:100%;
+  position:absolute;
+  overflow:hidden;
+}
+.inner-box{
+  height:628px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+
+.nation{
+
+  &-big{
+    width:100%;
+    font-size:250px;
+    color:#00ffaa;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translateY(-50%);
+    opacity:0.1;
+  }
+
+  &-small{
+    color:#00ffaa;
+    position:fixed;
+    left:50%;
+
+  }
+}
