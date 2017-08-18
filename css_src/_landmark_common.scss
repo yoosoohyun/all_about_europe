@@ -3,29 +3,34 @@
   width:100%;
   height:100%;
   position:absolute;
-  overflow:hidden;
+  //overflow:hidden;
 }
 
 .nation{
-
-  &-big{
-    width:100%;
-    font-size:250px;
-    color:#00ffaa;
-    position:absolute;
-    text-align:center;
-    top:50%;
-    transform:translateY(-50%);
-    opacity:0.1;
-  }
 
   &-small{
     color:#00ffaa;
     position:fixed;
     left:50%;
     //text-align:center;
+    //display:block;
   }
+
+  &-big{
+    width:100%;
+    font-size:250px;
+    color:#00ffaa;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translateY(-50%);
+    opacity:0.1;
+  }
+
+
 }
+
+
 
 .inner-box{
   height:628px;
@@ -36,23 +41,69 @@
 
 
 .land{
+
   &-wrap{
     width:595px;
     height:162px;
     margin-right:50px;
 
-    content:"";
-    display:block;
-    float:left;
+    position:absolute;
+
+
+    &:nth-child(1){
+      top:0;
+      left:0;
+    }
+    &:nth-child(2){
+      top:412px;
+      left:510px;
+    }
+    &:nth-child(3){
+      top:0;
+      left:1020px;
+    }
+    &:nth-child(4){
+      top:466px;
+      left:1530px;
+    }
+    &:nth-child(5){
+      top:0;
+      left:2040px;
+    }
+    &:nth-child(6){
+      top:368px;
+      left:2550px;
+    }
+    &:nth-child(7){
+      top:0;
+      left:3060px;
+    }
+    &:nth-child(8){
+      top:412px;
+      left:3570px;
+    }
+    &:nth-child(9){
+      top:0;
+      left:4080px;
+    }
+
+    &.height{
+      width:582px;
+      height:260px;
+    }
+
 
   }
   &-image{
-    content:"";
-    display:block;
     float:left;
 
     margin-right:45px;
+
+
+
   }
+
+
   &-title{
     padding-bottom:32px;
     color:#00ffaa;
@@ -62,3 +113,4 @@
 
   }
 }
+
