@@ -5,13 +5,6 @@
   position:absolute;
   overflow:hidden;
 }
-.inner-box{
-  height:628px;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-}
-
 
 .nation{
 
@@ -19,7 +12,7 @@
     width:100%;
     font-size:250px;
     color:#00ffaa;
-    position:fixed;
+    position:absolute;
     text-align:center;
     top:50%;
     transform:translateY(-50%);
@@ -30,6 +23,42 @@
     color:#00ffaa;
     position:fixed;
     left:50%;
+    //text-align:center;
+  }
+}
+
+.inner-box{
+  height:628px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+
+.land{
+  &-wrap{
+    width:595px;
+    height:162px;
+    margin-right:50px;
+
+    content:"";
+    display:block;
+    float:left;
+
+  }
+  &-image{
+    content:"";
+    display:block;
+    float:left;
+
+    margin-right:45px;
+  }
+  &-title{
+    padding-bottom:32px;
+    color:#00ffaa;
+
+  }
+  &-paragraph{
 
   }
 }
