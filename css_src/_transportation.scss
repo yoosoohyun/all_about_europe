@@ -1,0 +1,25 @@
+.bg-transport{
+  width:100%;
+  height:100%;
+  background-color:#000;
+  opacity:0.1;
+  position:fixed;
+}
+
+.transport{
+  &-innerbox{
+    width:1523px;
+    height:650px;
+    border:2px solid #fff;
+
+    color:#000;
+    //position:absolute;
+    &-title{
+      color:#00ffaa;
+      font-size:90px;
+      position:absolute;
+    }
+  }
+
+
+}
