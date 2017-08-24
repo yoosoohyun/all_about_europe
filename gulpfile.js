@@ -64,15 +64,15 @@ gulp.task('sass', function(){
 
 // concat ���� - ���� ���� ������ �ϳ��� ���Ϸ� ��ġ�� ���
 
-gulp.task('main', function() {
+gulp.task('function', function() {
   return gulp.src('js_src/*.js')
       .pipe(sourcemaps.init())
-      .pipe(concat('germany_res.js'))
+      .pipe(concat('main.js'))
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('js/'));
 });
 
-gulp.task('jsconcat', ['main']);
+gulp.task('jsconcat', ['function']);
 
 
 gulp.task('default', ['livereload', 'include', 'sass', 'jsconcat', 'watch']);

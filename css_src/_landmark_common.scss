@@ -1,6 +1,6 @@
 .bg{
   background-color:#000;
-  width:4971px;
+  width:100%;
   height:100%;
   position:absolute;
   //overflow:hidden;
@@ -30,17 +30,17 @@
 
 }
 
-.btn-toggle{
-  width:76px;
-  height:50px;
-  background:url(../images/menu_button.png);
-  border:0;
-  text-indent:-99999em;
-  top:32px;
-  right:32px;
-  cursor:pointer;
-  position:fixed;
-}
+//.btn-toggle{
+//  width:76px;
+//  height:50px;
+//  background:url(../images/menu_button.png);
+//  border:0;
+//  text-indent:-99999em;
+//  top:32px;
+//  right:32px;
+//  cursor:pointer;
+//  position:fixed;
+//}
 
 
 
@@ -59,9 +59,7 @@
     width:595px;
     height:162px;
     margin-right:50px;
-
     position:absolute;
-
 
     &:nth-child(1){
       top:0;
@@ -111,14 +109,6 @@
     float:left;
     margin-right:45px;
     cursor:pointer;
-
-    &:hover{
-      width:1920px;
-      height:1080px;
-      background:url(../images/france_land_big_1-1.jpg);
-      top:0;
-      left:0;
-    }
   }
 
 
@@ -134,15 +124,10 @@
 
 .timeline{
   width:1800px;
-  //height:30px;
   position:fixed;
   bottom:25px;
+  margin-left:110px;
 
-  //&-wrap{
-  //  content:"";
-  //  display:block;
-  //  text-align:center;
-  //}
 
 
   .margin{

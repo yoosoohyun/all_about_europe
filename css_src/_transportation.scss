@@ -1,25 +1,40 @@
 .bg-transport{
   width:100%;
   height:100%;
-  background-color:#000;
-  opacity:0.1;
-  position:fixed;
+  background:#ddd;
 }
 
-.transport{
-  &-innerbox{
+.transport-tip{
+  font-size:90px;
+  color:#00ffaa;
+  background:url(../images/transport_main.jpg) no-repeat;
+  width:1920px;
+  height:1080px;
+  text-align:center;
+  line-height:1080px;
+}
+
+.border{
+
+  //&-wrap{
+  //  width:1920px;
+  //  height:100%;
+  //  border:215px solid #000;
+  //  //background:#000;
+  //  position:absolute;
+  //  top:0;
+  //  left:0;
+  //
+  //  opacity:0.5;
+  //}
+
+  &-box{
+    border:3px solid #000;
     width:1523px;
     height:650px;
-    border:2px solid #fff;
-
-    color:#000;
-    //position:absolute;
-    &-title{
-      color:#00ffaa;
-      font-size:90px;
-      position:absolute;
-    }
+    position:fixed;
+    top:-50%;
+    left:50%;
+    transform:translate(-50%,50%);
   }
-
-
 }

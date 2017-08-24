@@ -1,28 +1,18 @@
-///**
-// * Created by yoosoohyun on 2017. 8. 21..
-// */
-//
-//
-////$(function(){
-////
-////  $('.main-image').on(function () {
-////    $(this).mouseenter('main-wrap');
-////  });
-////
-////  //$('.main-wrap').mouseleave(function () {
-////  //  $(this).on('main-image').fadeOut();
-////  //});
-////});
-//
-//
-//
-//$(document).ready(function(){
-//  $('.main-image').mouseenter(function(){
-//    $(this).fadeTo('fast', 0.25);
-//  });
-//  $('.main-wrap').mouseleave(function(){
-//    $(this).fadeTo('fast', 1);
-//  });
-//
-//
-//});
+/**
+ * Created by yoosoohyun on 2017. 8. 21..
+ */
+
+$(function(){
+
+  $('.main-hover').on('mouseenter', function(){
+
+    $('.main-wrap').removeClass('on');
+    $(this).children('.main-wrap').addClass('on');
+
+    var country = $(this).find('.main-text-name').text().toLowerCase();
+
+    $('.main-inner-box').removeClass('germany france italy swiss netherlands czech').addClass(country);
+
+  });
+
+});

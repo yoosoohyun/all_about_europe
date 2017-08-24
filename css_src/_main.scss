@@ -1,5 +1,7 @@
 .main-inner-box{
-  width:1920px;
+  position:absolute;
+  width:100%;
+  height:100%;
 }
 
 .btn-menuToggle{
@@ -17,6 +19,34 @@
 }
 
 .main{
+
+  &-inner-box{
+
+    &.germany {
+      background: url(../images/main1.jpg) no-repeat center;
+    }
+
+    &.france {
+      background: url(../images/main2.jpg) no-repeat center;
+    }
+
+    &.italy {
+      background: url(../images/main3.jpg) no-repeat center;
+    }
+
+    &.swiss {
+      background: url(../images/main4.jpg) no-repeat center;
+    }
+
+    &.netherlands {
+      background: url(../images/main5.jpg) no-repeat center;
+    }
+
+    &.czech {
+      background: url(../images/main6.jpg) no-repeat center;
+    }
+  }
+
   &:after{
     content:"";
     display:block;
@@ -30,26 +60,58 @@
 
   }
 
-  &-wrap{
-    //display:none;
-    float:left;
+  &-hover{
+    position:absolute;
+    width:33.33%;
+    height:50%;
 
-    width:629px;
-    height:529px;
+    &:nth-child(1){
+      position:absolute;
+      left:0;
+    }
+    &:nth-child(2){
+      position:absolute;
+      left:33.33%;
+    }
+    &:nth-child(3){
+      position:absolute;
+      left:66.66%;
+    }
+    &:nth-child(4){
+      position:absolute;
+      top:50%;
+      left:0;
+    }
+    &:nth-child(5){
+      position:absolute;
+      top:50%;
+      left:33.33%;
+    }
+    &:nth-child(6){
+      position:absolute;
+      top:50%;
+      left:66.66%;
+    }
+  }
+
+  &-wrap{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
     color:#00ffaa;
     background:#000;
     cursor:pointer;
     padding:10px 0 0 10px;
     z-index:100;
+    box-sizing: border-box;
+    overflow:hidden;
 
-
-    //&:nth-child(1){
-    //  position:relative;
-    //  top:0;
-    //  left:0;
-    //}
-
+    &.on{
+      display:block;
+    }
   }
+
   &-text{
     &-number{
       padding-bottom:17px;
@@ -66,6 +128,11 @@
     &-big{
       font-size:330px;
       text-align:center;
+
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      position:absolute;
 
     }
   }
