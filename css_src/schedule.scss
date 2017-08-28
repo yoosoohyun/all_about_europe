@@ -1,0 +1,61 @@
+.bg2{
+  width:100%;
+  height:100%;
+  background: -moz-linear-gradient(top, rgba(255,198,198,0.25) 0%, rgba(250,255,0,0.25) 17%, rgba(255,140,40,0.25) 36%, rgba(234,153,40,0.25) 38%, rgba(62,255,40,0.25) 54%, rgba(83,242,51,0.25) 56%, rgba(255,141,137,0.25) 72%, rgba(248,147,140,0.25) 73%, rgba(137,255,182,0.25) 90%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,198,198,0.25) 0%,rgba(250,255,0,0.25) 17%,rgba(255,140,40,0.25) 36%,rgba(234,153,40,0.25) 38%,rgba(62,255,40,0.25) 54%,rgba(83,242,51,0.25) 56%,rgba(255,141,137,0.25) 72%,rgba(248,147,140,0.25) 73%,rgba(137,255,182,0.25) 90%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,198,198,0.25) 0%,rgba(250,255,0,0.25) 17%,rgba(255,140,40,0.25) 36%,rgba(234,153,40,0.25) 38%,rgba(62,255,40,0.25) 54%,rgba(83,242,51,0.25) 56%,rgba(255,141,137,0.25) 72%,rgba(248,147,140,0.25) 73%,rgba(137,255,182,0.25) 90%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40ffc6c6', endColorstr='#4089ffb6',GradientType=0 ); /* IE6-9 */
+}
+
+.schedule-big{
+  //font-size:90px;
+  //color:#00ffaa;
+  background:url(../images/italy_schdule_main.jpg) no-repeat;
+  width:1920px;
+  height:1080px;
+  //position:absolute;
+  //text-align:center;
+  //line-height:1080px;
+
+  &-title{
+    color:#00ffaa;
+    font-size:90px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+  }
+}
+
+.border-box-schedule{
+  border:3px solid #fff;
+  width:1523px;
+  height:650px;
+  position:absolute;
+  left:184px;
+  top:173px;
+  text-indent:-99999em;
+}
+
+
+.inner-box{
+  width:1056px;
+  margin:0 auto;
+}
+
+.day{
+  font-size:90px;
+  color:#6e6e6d;
+  text-align:center;
+  margin:0 40px;
+}
+
+.schedule{
+
+  &-wrap{
+    color:#000;
+    width:411px;
+    height:254px;
+  }
+}
