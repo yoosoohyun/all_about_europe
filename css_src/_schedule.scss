@@ -1,4 +1,5 @@
 .bg2{
+
   width:100%;
   height:100%;
   background: -moz-linear-gradient(top, rgba(255,198,198,0.25) 0%, rgba(250,255,0,0.25) 17%, rgba(255,140,40,0.25) 36%, rgba(234,153,40,0.25) 38%, rgba(62,255,40,0.25) 54%, rgba(83,242,51,0.25) 56%, rgba(255,141,137,0.25) 72%, rgba(248,147,140,0.25) 73%, rgba(137,255,182,0.25) 90%); /* FF3.6-15 */
@@ -48,14 +49,66 @@
   font-size:90px;
   color:#6e6e6d;
   text-align:center;
-  margin:0 40px;
+  margin:150px 0;
+}
+
+.center-line{
+  width:3px;
+  height:1000px;
+  background:#00ffaa;
+  margin:0 auto;
+  text-indent:-99999em;
+  //position:relative;
+}
+
+.border-radius{
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background:#00ffaa;
+  position:absolute;
+  //top:0;
+  //left:0;
 }
 
 .schedule{
 
   &-wrap{
+    background:skyblue;
     color:#000;
     width:411px;
     height:254px;
+    position:relative;
+    float:left;
+    margin-right:50px;
+  }
+  &-center{
+    position:absolute;
+    width:360px;
+    height:214px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+  }
+
+  &-iamge{
+  }
+
+  &-text{
+    width:164px;
+    height:169px;
+
+    float:right;
+
+
+
+    &-title{
+      margin-bottom:20px;
+
+    }
+
+    &-paragraph{
+
+    }
   }
 }
