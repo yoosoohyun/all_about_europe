@@ -87,6 +87,15 @@ gulp.task('function', function() {
       .pipe(sourcemaps.write())
       .pipe(gulp.dest('js/'));
 });
+
+gulp.task('function', function() {
+  return gulp.src('js_src/*.js')
+      .pipe(sourcemaps.init())
+      .pipe(concat('transport.js'))
+      .pipe(sourcemaps.write())
+      .pipe(gulp.dest('js/'));
+});
+
 gulp.task('jsconcat', ['function']);
 
 

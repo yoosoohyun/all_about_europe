@@ -93,12 +93,14 @@
 
 
   }
+  &-info{
+    padding-left:20px;
+  }
   &-image{
     float:left;
     margin-right:45px;
     //cursor:pointer;
   }
-
 
   &-title{
     padding-bottom:32px;
@@ -107,6 +109,51 @@
   }
   &-paragraph{
 
+  }
+
+  &-address:before{
+    display:inline-block;
+    content:"";
+    width:15px;
+    height:15px;
+    background:url(../images/icon_sprite.png) 0 0;
+    margin-right:5px;
+  }
+
+  &-transport:before{
+    display:inline-block;
+    content:"";
+    width:15px;
+    height:13px;
+    background:url(../images/icon_sprite.png) 0 -16px;
+    margin-right:5px;
+  }
+
+  &-phone:before{
+    display:inline-block;
+    content:"";
+    width:15px;
+    height:15px;
+    background:url(../images/icon_sprite.png) 0 -30px;
+    margin-right:5px;
+  }
+
+  &-time:before{
+    display:inline-block;
+    content:"";
+    width:15px;
+    height:15px;
+    background:url(../images/icon_sprite.png) 0 -46px;
+    margin-right:5px;
+  }
+
+  &-web:before{
+    display:inline-block;
+    content:"";
+    width:15px;
+    height:13px;
+    background:url(../images/icon_sprite.png) 0 -62px;
+    margin-right:5px;
   }
 }
 

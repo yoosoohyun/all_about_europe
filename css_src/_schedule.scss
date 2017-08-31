@@ -40,10 +40,10 @@
 }
 
 
-.inner-box{
-  width:1056px;
-  margin:0 auto;
-}
+//.inner-box2{
+//  width:1056px;
+//  margin:0 auto;
+//}
 
 .day{
   font-size:90px;
@@ -54,11 +54,11 @@
 
 .center-line{
   width:3px;
-  height:1000px;
+  height:800px;
   background:#00ffaa;
   margin:0 auto;
   text-indent:-99999em;
-  //position:relative;
+  position:relative;
 }
 
 .border-radius{
@@ -67,10 +67,29 @@
   border-radius:50%;
   background:#00ffaa;
   position:absolute;
-  top:0;
-  left:0;
-
   text-indent:-99999em;
+
+  &:nth-child(1){
+    top:0;
+    left:-10px;
+  }
+  &:nth-child(2){
+    top:200px;
+    left:-10px;
+  }
+  &:nth-child(3){
+    top:400px;
+    left:-10px;
+  }
+  &:nth-child(4){
+    top:600px;
+    left:-10px;
+  }
+  &:nth-child(5){
+    top:800px;
+    left:-10px;
+  }
+
 }
 
 .schedule{
@@ -81,9 +100,61 @@
     width:411px;
     height:254px;
     position:relative;
-    float:left;
-    margin-right:50px;
+    //float:left;
+    //margin-right:50px;
+
+    &:nth-child(1){
+      top:-825px;
+      left:-29px;
+    }
+
+    &:nth-child(2){
+      top:-882px;
+      left:625px;
+    }
+
+    &:nth-child(3){
+      top:-933px;
+      left:-29px;
+    }
+
+    &:nth-child(4){
+      top:-991px;
+      left:625px;
+    }
+
+    &:nth-child(5){
+      top:-1041px;
+      left:-29px;
+    }
+
+
   }
+
+  &-triangle-right{
+    width:0;
+    height:0;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:30px solid yellowgreen;
+    text-indent:-99999em;
+    position:absolute;
+    top:25px;
+    left:411px;
+  }
+
+  &-triangle-left{
+    width:0;
+    height:0;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-right:30px solid yellowgreen;
+    text-indent:-99999em;
+    position:absolute;
+    top:25px;
+    left:-30px;
+  }
+
   &-center{
     position:absolute;
     width:360px;
@@ -112,5 +183,87 @@
     &-paragraph{
 
     }
+  }
+}
+
+.nav{
+  &-side{
+    width:105px;
+    color:#00ffaa;
+    font-size:18px;
+    font-weight:bold;
+    position:fixed;
+    top:93px;
+    right:225px;
+  }
+
+  &-title{
+    padding-bottom:30px;
+    text-align:center;
+
+  }
+
+  &-height{
+    width:2px;
+    height:130px;
+    background:#00ffaa;
+    text-indent:-99999em;
+    margin:0 auto;
+  }
+
+  &-width{
+    width:105px;
+    height:25px;
+    margin:90px 0;
+    position:relative;
+    cursor:pointer;
+
+    &-pd{
+      //width:15px;
+      width:105px;
+      height:2px;
+      background:#b3b5b7;
+      //text-indent:-99999em;
+      position:absolute;
+      top:12px;
+      left:0;
+
+      &.on{
+        background:none;
+      }
+    }
+  }
+
+  &-name{
+
+    display:none;
+    width:105px;
+    text-align:center;
+    color:#00ffaa;
+    position:absolute;
+    top:-13px;
+    left:0;
+
+    &.on{
+      display:block;
+    }
+  }
+
+  &-arrow-box{
+    width:68px;
+    height:124px;
+    border:2px solid #00ffaa;
+    text-indent:-99999em;
+    position:relative;
+    box-sizing:border-box;
+    margin:0 auto;
+  }
+  &-arrow{
+    width:20px;
+    height:65px;
+    background:url(../images/transport_arrow.png) 0 0;
+    position:absolute;
+    top:40px;
+    left:22px;
   }
 }
