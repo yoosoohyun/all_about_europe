@@ -13,8 +13,6 @@
     color:#00ffaa;
     position:fixed;
     left:50%;
-    //text-align:center;
-    //display:block;
   }
 
   &-big{
@@ -48,6 +46,7 @@
     height:162px;
     margin-right:50px;
     position:absolute;
+    transition:all 1s ease-out;
 
     &:nth-child(1){
       top:0;

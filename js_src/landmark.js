@@ -2,27 +2,37 @@
  * Created by Administrator on 2017-08-30.
  */
 
+
+
 $(function(){
-  $('.bg').on('mousewheel',function(e){
 
-    var wheelDelta = e.originalEvent.wheelDelta;
+  var scrollAmount = 0;
+  $(window).on('mousewheel', function(e){
 
-    if(wheelDelta > 0){
+    //console.log(e.originalEvent.wheelDelta);
 
-      console.log("up");
+    scrollAmount += e.originalEvent.wheelDelta;
 
-      $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
-
-    }else{
-
-      console.log("down");
-
-      $(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
-
+    if(scrollAmount >= 0){
+      scrollAmount = 0;
     }
+
+    //console.log( $('.land-wrap:last-child').offset().left );
+
+
+
+    if( scrollAmount <= -3000 ){
+      scrollAmount = -3000;
+    }
+
+    //console.log(scrollAmount);
+
+
+    $('.land-wrap').css({
+      transform:'translateX(' + scrollAmount + 'px)'
+    });
 
   });
 
+
 });
-
-

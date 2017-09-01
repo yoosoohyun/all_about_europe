@@ -26,21 +26,42 @@
 //});
 
 
-$(function(){
-  $('.menu-title-item').on('mouseenter', function(){
-    $('.menu-schedule').addClass('on');
-    $('.menu-landmark').removeClass('on');
-  });
 
-  $('.menu-title-item').eq(0).on('mouseenter', function(){
-    $('.menu-schedule').removeClass('on');
-    $('.menu-landmark').addClass('on');
-  });
+//
+//$(function(){
+//  $('.menu-title-item').on('mouseenter', function(){
+//    $('.menu-schedule').addClass('on');
+//    $('.menu-landmark').removeClass('on');
+//  });
+//
+//  $('.menu-title-item').eq(0).on('mouseenter', function(){
+//    $('.menu-schedule').removeClass('on');
+//    $('.menu-landmark').addClass('on');
+//  });
+//
+//  $('.menu-title-item').eq(2).on('mouseenter', function(){
+//    $('.menu-schedule').removeClass('on');
+//    $('.menu-landmark').removeClass('on');
+//  });
+//
+//
+//});
 
-  $('.menu-title-item').eq(2).on('mouseenter', function(){
-    $('.menu-schedule').removeClass('on');
-    $('.menu-landmark').removeClass('on');
-  });
 
-
-});
+//$(function(){
+//  $('.menu-title-item').on('mouseenter', function(){
+//
+//    //$('menu-schedule').removeClass('on');
+//
+//    $('.menu-landmark').addClass('on');
+//  });
+//
+//  $('.menu-title-item').on('mouseleave', function(){
+//    $('.menu-landmark').removeClass('on');
+//  });
+//
+//  $('.menu-title-item').children().on('mouseenter', function(){
+//    $('.menu-landmark').removeClass('on');
+//    $('.menu-schedule').addClass('on');
+//  });
+//});
