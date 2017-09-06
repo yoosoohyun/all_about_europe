@@ -6,12 +6,12 @@ $(function(){
 
   $('.main-hover').on('mouseenter', function(){
 
+    var indexNumber = $(this).index('.main-hover')
     $('.main-wrap').removeClass('on');
     $(this).children('.main-wrap').addClass('on');
 
-    var country = $(this).find('.main-text-name').text().toLowerCase();
-
-    $('.main-inner-box').removeClass('germany france italy swiss netherlands czech').addClass(country);
+    $('.main-bg').removeClass('on');
+    $('.main-bg').eq(indexNumber).addClass('on');
 
   });
 

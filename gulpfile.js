@@ -51,6 +51,13 @@ gulp.task('include', function(){
 
 });
 
+//gulp.task('index', function(){
+//  gulp.src("html_src/index.html")
+//      .pipe(include())
+//      .on('error', console.log)
+//      .pipe(gulp.dest("./"));
+//});
+
 // sass 실행
 gulp.task('sass', function(){
   return gulp.src('css_src/*.scss')

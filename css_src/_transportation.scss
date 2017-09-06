@@ -54,8 +54,8 @@
   }
 
   &-text{
-    transform: translate3d(-50,0);
     width:607px;
+    transition:transform 1s ease-out;
 
 
     position:absolute;
